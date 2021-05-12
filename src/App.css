@@ -1,0 +1,173 @@
+body{
+  background-color: #282c34;
+}
+
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.standard-icon{
+  aspect-ratio: 1/1;
+  max-width: 5vw;
+  max-height: 5vw;
+}
+
+main{
+  box-sizing: border-box;
+  border: #61dafb 2px solid;
+  min-height: 80vh;
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  display: flex;
+  
+}
+
+.fullPage{
+  height: 100%;
+  width: 100%;
+  margin: 10px;
+  
+}
+
+.fullColumn{
+  width: 100%;
+}
+
+.fullColumn .content
+{
+  box-sizing: border-box;
+  border: #61dafb 2px solid;
+  height: 100%;
+}
+
+.fullRow{
+
+  justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+}
+
+.formBox{
+
+  box-sizing: border-box;
+  border: #61dafb 2px solid;
+
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.stickbox{
+  aspect-ratio: 1/1;
+  min-width: 5vw;
+  width: fit-content;
+  display: block;
+  margin: 5px;
+  padding: 15px;
+
+
+  box-sizing: border-box;
+  border: #61dafb 2px solid;
+
+  background-color: antiquewhite;
+
+  color: black;
+
+}
+
+.std-app-logo{
+  aspect-ratio: 1/1;
+  height: 100%;
+}
+
+.stickboard{
+  width: 100%;
+  
+  overflow: scroll;
+}
+
+.fullColumn .content
+{
+  box-sizing: border-box;
+  border: #61dafb 2px solid;
+  height: 100%;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  border-radius: 50%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #101050;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; 
+}
+
+.PopUp{
+  padding: 2%;
+  aspect-ratio: 4/3 ;
+  position: absolute;
+  width: 50vw;
+
+  z-index: 9;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+ 
+  align-items: center;
+  display: flex;
+  
+  box-sizing: border-box;
+  border: #61dafb 2px solid;
+  background-color: darkslategray;
+}
