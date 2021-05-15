@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import '../App.css';
 
 
-//simple teplate to create react components fast.
-
 class StickBox extends Component {
   
     constructor(props) {
@@ -11,9 +9,11 @@ class StickBox extends Component {
      
 
         this.state = {
-            titleName:props.titleName,
-            contentTxt:props.contentTxt,
-            parent:props.parent
+            titleName:props.titleName||"",
+            contentTxt:props.contentTxt||"",
+            parent:props.parent||"",
+            boardID: props.boardID||"",  // id in the board use exclusively in it , reasigned a move to another board
+            ID:props.ID||""
             /**
            *   example props set
            *    id: props.id,
@@ -28,6 +28,15 @@ class StickBox extends Component {
         }
       
 
+    }
+
+    setFullContent(name="ss",content=""){
+        alert("name:"+name+" content:"+content)
+        this.setState({
+            titleName:name,
+            contentTxt:content
+        })
+        alert("tnam:"+this.state.titleName+" contntxt:"+this.state.contentTxt)
     }
     //return render(used to draw in parent)
     //if the only function nesesary for  a componet too be valid.
